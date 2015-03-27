@@ -5,7 +5,7 @@ var sessionId = '';
 var name = '';
  
 // socket connection url and port
-var socket_url = 'localhost';//'128.208.185.110';
+var socket_url = '128.208.185.110';
 var port = '8080';
  
 $(document).ready(function() {
@@ -48,7 +48,7 @@ function openSocket() {
  
     // Create a new instance of the websocket
     webSocket = new WebSocket("ws://" + socket_url + ":" + port
-            + "/WebMobileGroupChatServer/chat?name=" + name);
+            + "/AnnonPalServer/chat?name=" + name);
  
     /**
      * Binds functions to the listeners for the websocket.
